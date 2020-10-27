@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">M08_UF1_P3_Formularis</string>
+    <string name="editText_hint">Introdueix el teu nom</string>
+    <string name="next_step">NEXT STEP</string>
+    <string name="hola">Hola</string>
+    <string name="adeu">Adeu</string>
+    <string name="show">SHOW</string>
+    <string name="share">SHARE</string>
+    <string name="inName">Intodueix el teu nom</string>
 </resources>
