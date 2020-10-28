@@ -29,27 +29,17 @@ public class Activity3 extends AppCompatActivity {
     }
 
     public void showInfo() {
-        StringBuilder sb = new StringBuilder();
         Bundle bundle = getIntent().getExtras();
         String name = bundle.getString("name");
         int age = bundle.getInt("age");
 
         if (bundle.getString("radioOption").equals("hola")) {
-            sb.append(getText(R.string.hola)).append(" ");
-            sb.append(name).append(", ");
-            sb.append(getText(R.string.com_portes)).append(" ");
-            sb.append(age).append(" ");
-            sb.append(getText(R.string.anys)).append("?");
+            message = getString(R.string.hola_message, name, String.valueOf(age));
         } else {
-            sb.append(getText(R.string.tornar_veure)).append(" ");
-            sb.append(name).append(", ");
-            sb.append(getText(R.string.abans_que)).append(" ");
-            sb.append(age + 1).append(" ");
-            sb.append(getText(R.string.anys));
+            message = getString(R.string.adeu_message, name, String.valueOf(age + 1));
         }
 
-        message = sb.toString();
-        sout(sb.toString());
+        sout(message);
     }
 
     public void sout(String text) {

@@ -8,8 +8,6 @@
     <string name="share">SHARE</string>
     <string name="inName">Intodueix el teu nom</string>
     <string name="minAge">Edats peremeses són entre 18 i 60</string>
-    <string name="tornar_veure">Espero tornar a veure’t</string>
-    <string name="com_portes">com portes aquests</string>
-    <string name="anys">anys</string>
-    <string name="abans_que">abans que facis</string>
+    <string name="hola_message">Hola %1$s, com portes aquests %2$s anys?</string>
+    <string name="adeu_message">Espero tornar a veure’t %1$s, abans que facis %2$s anys</string>
 </resources>
