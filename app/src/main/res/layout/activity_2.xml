@@ -14,14 +14,20 @@
         android:layout_centerInParent="true">
 
         <RadioButton
+            android:id="@+id/radio_button_hola"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hola"/>
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/hola"
+            android:buttonTint="@color/colorAccent"/>
 
         <RadioButton
+            android:id="@+id/radio_button_adeu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/adeu"/>
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/adeu"
+            android:buttonTint="@color/colorAccent"/>
 
     </RadioGroup>
 
@@ -44,12 +50,13 @@
         android:text="0"/>
 
     <Button
-        android:id="@+id/button_act3_show"
+        android:id="@+id/button_show"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorAccent"
         android:layout_alignParentBottom="true"
         android:text="@string/next_step"
-        android:textColor="@color/colorWhite"/>
+        android:textColor="@color/colorWhite"
+        android:visibility="gone"/>
 
 </RelativeLayout>

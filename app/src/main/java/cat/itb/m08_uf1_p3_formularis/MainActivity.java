@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //getSupportActionBar().setDisplayShowHomeEnabled(true);
         EditText editTextNom = findViewById(R.id.editTextNom);
         Button buttonNext = findViewById(R.id.act1_next_step);
 
@@ -25,17 +24,18 @@ public class MainActivity extends AppCompatActivity {
                 name = editTextIn;
                 openAct2();
             } else {
-                sout(getText(R.string.inName));
+                sout(R.string.inName);
             }
         });
     }
 
-    public void sout(CharSequence text) {
+    public void sout(int text) {
         Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
     }
 
     public void openAct2() {
         Intent intent = new Intent(MainActivity.this, Activity2.class);
+        intent.putExtra("name", name);
         startActivity(intent);
     }
 
